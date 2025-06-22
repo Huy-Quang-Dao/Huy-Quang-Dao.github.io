@@ -6,13 +6,14 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: huydq2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p> Robotics Researcher </p>
     <p> Hungyen, VN </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -27,3 +28,5 @@ announcements:
 I’m a robotics researcher at Vinmotion. Before coming to Vinmotion, I earned my B.Eng. in Control Engineering and Automation from Hanoi University of Science and Technology in Vietnam. I also worked as a research scientist at HUST, where I focused on reinforcement learning and optimal control.
 
 My research lies at the intersection of optimization, robots, and control, with a particular focus on developing new methods for humanoid robots. Currently, I’m particularly interested in humanoid robots and intelligent control such as MPC, RL, and sampling-based optimal control. 
+
+[Email](mailto:daoquanghuy2203@gmail.com)  / [Github](https://github.com/Huy-Quang-Dao) / [LinkedIn](https://www.linkedin.com/in/quang-huy-%C4%91%C3%A0o-395a36291/)
