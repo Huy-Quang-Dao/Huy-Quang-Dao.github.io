@@ -401,17 +401,7 @@ ninja.data = [{
             },},{id: "news-hello-world",
           title: 'Hello world!!!',
           description: "",
-          section: "News",},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
+          section: "News",},{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -431,11 +421,21 @@ ninja.data = [{
           description: "study and implement classic Reinforcement Learning algorithms.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Class_I2RLCornell/";
+            },},{id: "projects-introduction-to-robotics-princeton",
+          title: 'Introduction to Robotics (Princeton)',
+          description: "study and implement classic Reinforcement Learning algorithms.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Class_I2Robotics/";
             },},{id: "projects-optimal-control-and-reinforcement-learning-cmu",
           title: 'Optimal Control and Reinforcement Learning (CMU)',
           description: "intelligent control",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Class_optColCMU/";
+            },},{id: "projects-inverse-rl-control",
+          title: 'Inverse RL Control',
+          description: "adaptive, robust and optimal control; reinforcement learning",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/InverseRL/";
             },},{id: "projects-non-zero-sum-game-rl",
           title: 'Non-zero sum game RL',
           description: "adaptive, robust and optimal control; reinforcement learning",
