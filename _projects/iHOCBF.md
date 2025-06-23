@@ -5,7 +5,7 @@ description: iterative Discrete-time High-order Control Barrier Function (Julia 
 img: assets/video/ihocbf.gif
 importance: 2
 category: lab
-giscus_comments: true
+related_publications: true
 ---
 
 
