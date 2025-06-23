@@ -401,22 +401,7 @@ ninja.data = [{
             },},{id: "news-hello-world",
           title: 'Hello world!!!',
           description: "",
-          section: "News",},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
+          section: "News",},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
@@ -441,11 +426,26 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
+            },},{id: "projects-introduction-to-reinforcement-learning-cornell",
+          title: 'Introduction to Reinforcement Learning (Cornell)',
+          description: "study and implement classic Reinforcement Learning algorithms.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Class_I2RLCornell/";
+            },},{id: "projects-optimal-control-and-reinforcement-learning-cmu",
+          title: 'Optimal Control and Reinforcement Learning (CMU)',
+          description: "intelligent control",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Class_optColCMU/";
+            },},{id: "projects-non-zero-sum-game-rl",
+          title: 'Non-zero sum game RL',
           description: "adaptive, robust and optimal control; reinforcement learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Non0sum_RL/";
+            },},{id: "projects-iterative-dhocbf",
+          title: 'iterative DHOCBF',
+          description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/iHOCBF/";
             },},{
         id: 'social-email',
         title: 'email',
