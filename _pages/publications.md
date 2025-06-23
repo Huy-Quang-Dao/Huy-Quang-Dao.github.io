@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: publications by categories in reversed chronological order <br> *equal contribution
 years1: [2025,2024, 2023]
-years2: [2025]
+years2: [2025,2024, 202]
 nav: true
 nav_order: 1
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 1
+title: Non-zero sum game RL
 description: adaptive, robust and optimal control; reinforcement learning
 img: assets/video/K1.gif
 importance: 1
