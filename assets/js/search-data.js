@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
         },{id: "nav-projects",
           title: "Projects",
           description: "A growing collection of your cool projects.",
@@ -401,22 +394,7 @@ ninja.data = [{
             },},{id: "news-hello-world",
           title: 'Hello world!!!',
           description: "",
-          section: "News",},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "projects-introduction-to-reinforcement-learning-cornell",
+          section: "News",},{id: "projects-introduction-to-reinforcement-learning-cornell",
           title: 'Introduction to Reinforcement Learning (Cornell)',
           description: "study and implement classic Reinforcement Learning algorithms.",
           section: "Projects",handler: () => {
@@ -431,6 +409,11 @@ ninja.data = [{
           description: "intelligent control",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Class_optColCMU/";
+            },},{id: "projects-embedded-ai",
+          title: 'Embedded AI',
+          description: "Embedded AI from technology to reality",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/EmbeddedAI/";
             },},{id: "projects-inverse-rl-control",
           title: 'Inverse RL Control',
           description: "adaptive, robust and optimal control; reinforcement learning",
@@ -441,6 +424,11 @@ ninja.data = [{
           description: "adaptive, robust and optimal control; reinforcement learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Non0sum_RL/";
+            },},{id: "projects-humanoid",
+          title: 'Humanoid',
+          description: "a project with humanoid researches",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Research_1/";
             },},{id: "projects-iterative-dhocbf",
           title: 'iterative DHOCBF',
           description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
