@@ -429,6 +429,11 @@ ninja.data = [{
           description: "a project with humanoid researches",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Research_1/";
+            },},{id: "projects-robots-dancing",
+          title: 'Robots Dancing',
+          description: "Humanoid Robot Dancing on Stage Project",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Robot_dancing/";
             },},{id: "projects-iterative-dhocbf",
           title: 'iterative DHOCBF',
           description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
