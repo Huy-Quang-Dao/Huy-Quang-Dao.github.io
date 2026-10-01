@@ -24,9 +24,7 @@ Earlier that month, on 8 August 2025, a group of the robots danced in sync at Vi
 
 ## After the performance
 
-The first industrial jobs planned for Motion 1 are inside VinFast factories: carrying parts and helping with quality inspection. The longer arc is logistics, service, and other settings where a humanoid has to share space with people.
-
-VinMotion’s deployment stack is a human-in-the-loop system. Robots run in the real environment with an operator in the loop, and that supervision is what the fleet learns from. Motion 1 is the machine that had to prove the idea in public first.
+The longer arc is logistics, service, and other settings where a humanoid has to share space with people. VinMotion’s deployment stack is a human-in-the-loop system: robots run in the real environment with an operator in the loop, and that supervision is what the fleet learns from. Motion 1 is the machine that had to prove the idea in public first.
 
 ## Coverage
 

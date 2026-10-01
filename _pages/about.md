@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Robotics Engineer, VinMotion
+subtitle: Robotics Engineer, VinMotion Inc.
 
 profile:
   align: right
@@ -10,7 +10,7 @@ profile:
   image_circular: false
   more_info: >
     <p>Robotics Engineer</p>
-    <p>VinMotion, Hanoi</p>
+    <p>VinMotion Inc., US</p>
 
 selected_papers: true
 social: true
@@ -18,17 +18,17 @@ social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 5
+  limit: 6
 ---
 
-I am a robotics engineer at [VinMotion](https://vinmotion.net/), where I work on whole-body motion for humanoid robots that walk, dance, recover from falls, and hold up in front of a crowd. The photo is from Vingroup’s 33rd anniversary, with MiniMotion.
+I joined [VinMotion](https://vinmotion.net/) in April 2025 as a Robotics Engineer, working on whole-body motion for humanoid robots that walk, dance, recover from falls, and hold up in front of a crowd. Since October 2026 I have been a Robotics Engineer at VinMotion Inc. (US). The photo is from Vingroup’s 33rd anniversary, with MiniMotion.
 
 I studied Control Engineering and Automation at Hanoi University of Science and Technology, and before VinMotion I was a research scientist in the Advanced Control and Robotics group with Prof. Phuong Nam Dao. That work was on reinforcement learning, H∞ games, and optimal tracking.
 
-These days I care about humanoid locomotion, aggressive standing-up, model predictive control, and learning-based whole-body control. Two manuscripts are under review: standing-up across diverse terrains, submitted to Humanoids, and [X-BFM](/projects/x-bfm/), submitted to ICRA.
+Two manuscripts are under review: standing-up across diverse terrains at Humanoids, and [X-BFM](/projects/x-bfm/) at ICRA.
 
 ### Systems I work on
 
-- **[Motion 1](/projects/motion-1/).** Synchronized stage performance for the public, including the A80 national celebrations, and the path toward factory tasks at VinFast.
-- **[Motion 2](/projects/motion-2/).** Global debut at CES 2026 with Qualcomm: walking, boxing, dancing, teleoperation, and hot-swappable batteries for continuous operation.
+- **[Motion 1](/projects/motion-1/).** Synchronized stage performance for the public, including the A80 national celebrations.
+- **[Motion 2](/projects/motion-2/).** Global debut at CES 2026 with Qualcomm: walking, boxing, and dancing.
 - **[MiniMotion](/projects/minimotion/).** A compact humanoid for flips, fall recovery, platform climbing, and balance under a heavy load.
