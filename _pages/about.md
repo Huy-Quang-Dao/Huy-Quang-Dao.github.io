@@ -2,31 +2,33 @@
 layout: about
 title: About
 permalink: /
-# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Robotics Engineer, VinMotion
 
 profile:
   align: right
-  image: huydq2.jpg
-  image_circular: false # crops the image to make it circular
+  image: huy-vinmotion.jpg
+  image_circular: false
   more_info: >
-    <p> Robotics Researcher </p>
-    <p> Hungyen, VN </p>
+    <p>Robotics Engineer</p>
+    <p>VinMotion, Hanoi</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-# latest_posts:
-#   enabled: true
-#   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-#   limit: 3 # leave blank to include all the blog posts
+  enabled: true
+  scrollable: true
+  limit: 5
 ---
-I’m a robotics researcher at Vinmotion. Before coming to Vinmotion, I earned my B.Eng. in Control Engineering and Automation from Hanoi University of Science and Technology in Vietnam. I also worked as a research scientist at HUST, where I focused on reinforcement learning and optimal control.
 
-My research lies at the intersection of optimization, robots, and control, with a particular focus on developing new methods for humanoid robots. Currently, I’m particularly interested in humanoid robots and intelligent control such as MPC, RL, and sampling-based optimal control. 
+I am a robotics engineer at [VinMotion](https://vinmotion.net/), where I work on whole-body motion for humanoid robots that walk, dance, recover from falls, and hold up in front of a crowd. The photo is from Vingroup’s 33rd anniversary, with MiniMotion.
 
-[Email](mailto:daoquanghuy2203@gmail.com)  / [Github](https://github.com/Huy-Quang-Dao) / [LinkedIn](https://www.linkedin.com/in/quang-huy-%C4%91%C3%A0o-395a36291/)
+I studied Control Engineering and Automation at Hanoi University of Science and Technology, and before VinMotion I was a research scientist in the Advanced Control and Robotics group with Prof. Phuong Nam Dao. That work was on reinforcement learning, H∞ games, and optimal tracking.
+
+These days I care about humanoid locomotion, aggressive standing-up, model predictive control, and learning-based whole-body control. Two manuscripts are under review: standing-up across diverse terrains, submitted to Humanoids, and [X-BFM](/projects/x-bfm/), submitted to ICRA.
+
+### Systems I work on
+
+- **[Motion 1](/projects/motion-1/).** Synchronized stage performance for the public, including the A80 national celebrations, and the path toward factory tasks at VinFast.
+- **[Motion 2](/projects/motion-2/).** Global debut at CES 2026 with Qualcomm: walking, boxing, dancing, teleoperation, and hot-swappable batteries for continuous operation.
+- **[MiniMotion](/projects/minimotion/).** A compact humanoid for flips, fall recovery, platform climbing, and balance under a heavy load.

@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: publications by categories in reversed chronological order <br> *equal contribution
-years1: [2025,2024, 2023]
+description: Published work, and manuscripts currently under review. An asterisk marks equal contribution.
+years1: [2025, 2024, 2023]
 years2: [2025,2024, 2023]
 nav: true
 nav_order: 1
@@ -16,6 +16,10 @@ nav_order: 1
 <!-- {% include bib_search.liquid %} -->
 
 <div class="publications">
+
+<h1>submitted</h1>
+
+{% bibliography -f papers -q @*[year=2026]* --group_by none %}
 
 <h1>preprints</h1>
 

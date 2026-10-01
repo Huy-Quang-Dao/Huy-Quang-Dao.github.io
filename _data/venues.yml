@@ -1,9 +1,18 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Submitted":
+  color: "#5c6b73"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"CSF":
+  url: https://www.sciencedirect.com/journal/chaos-solitons-and-fractals
+  color: "#6b2d5b"
 
-"Vision":
-  color: "#009f36"
+"ICCAIS":
+  url: https://ieeexplore.ieee.org/
+  color: "#1a5276"
+
+"Humanoids":
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/humanoids
+  color: "#8c1d40"
+
+"ICRA":
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+  color: "#003366"
