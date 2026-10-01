@@ -407,6 +407,11 @@ ninja.data = [{
           description: "Embedded AI from technology to reality",
           section: "Projects",handler: () => {
               window.location.href = "/projects/EmbeddedAI/";
+            },},{id: "projects-citomimic",
+          title: 'CitoMimic',
+          description: "Trajectory optimization with RL motion tracking on the Unitree G1.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/citomimic/";
             },},{id: "projects-iterative-dhocbf",
           title: 'iterative DHOCBF',
           description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
@@ -432,6 +437,11 @@ ninja.data = [{
           description: "Global debut at CES 2026. Walking, boxing, and dancing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/motion-2/";
+            },},{id: "projects-pickup-with-trajectory-optimization",
+          title: 'Pickup with trajectory optimization',
+          description: "Trajectory optimization for picking up an object.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pickup-momentum/";
             },},{id: "projects-aggressive-standing-up",
           title: 'Aggressive standing-up',
           description: "Under review at Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.",
@@ -442,6 +452,11 @@ ninja.data = [{
           description: "Under review at ICRA. A behavioral foundation model for extreme humanoid control.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/x-bfm/";
+            },},{id: "projects-zero-shot-lqr",
+          title: 'Zero-shot LQR',
+          description: "Preprint. One reward-free dataset, then any linear-quadratic task in closed form.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/zeroshot-lqr/";
             },},{
         id: 'social-email',
         title: 'email',
