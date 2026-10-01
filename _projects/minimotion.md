@@ -16,8 +16,6 @@ MiniMotion is a compact humanoid built to do the moves that are hard to fake: le
   MiniMotion. <a href="https://www.youtube.com/watch?v=0mSTzB2-krI">Watch on YouTube</a>.
 </div>
 
-{% include figure.liquid path="assets/img/huy-vinmotion.jpg" class="img-fluid rounded z-depth-1" caption="With MiniMotion at Vingroup’s 33rd anniversary, 1993–2026." %}
-
 ## What it can do
 
 The public reel, *MiniMotion from Zero to Hero*, runs through a stack of skills rather than a single stunt:

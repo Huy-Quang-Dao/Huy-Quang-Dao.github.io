@@ -2,7 +2,7 @@
 layout: page
 title: VinMotion Motion 2
 description: Global debut at CES 2026. Walking, boxing, and dancing.
-img: assets/img/motion2-card.jpg
+img: assets/img/motion2-family-day.jpg
 importance: 1
 category: work
 ---
@@ -15,6 +15,8 @@ Motion 2 is the second-generation humanoid. I contribute to the motion side of t
 <div class="caption">
   Motion 2. <a href="https://www.youtube.com/watch?v=xu0Rg_AQxh8">Watch on YouTube</a>.
 </div>
+
+{% include figure.liquid path="assets/img/motion2-family-day.jpg" class="img-fluid rounded z-depth-1" caption="With Motion 2 at VinMotion Family Day." %}
 
 ## CES 2026
 

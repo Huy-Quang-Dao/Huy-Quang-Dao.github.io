@@ -3,7 +3,7 @@ layout: page
 title: iterative DHOCBF
 description: iterative Discrete-time High-order Control Barrier Function (Julia Package)
 img: assets/video/ihocbf.gif
-importance: 2
+importance: 3
 category: lab
 related_publications: true
 ---

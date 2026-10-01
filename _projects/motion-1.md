@@ -2,7 +2,7 @@
 layout: page
 title: VinMotion Motion 1
 description: Synchronized humanoid performance for the public, including the A80 national celebrations.
-img: assets/img/motion1-card.jpg
+img: assets/img/motion1-a80.jpg
 importance: 2
 category: work
 ---
@@ -17,6 +17,8 @@ Motion 1 is VinMotion’s first full-size humanoid. I work on it as a robotics e
 </div>
 
 ## On stage for A80
+
+{% include figure.liquid path="assets/img/motion1-a80.jpg" class="img-fluid rounded z-depth-1" caption="With Motion 1 at the A80 event." %}
 
 In August 2025, Motion 1 performed live in Hanoi at the groundbreaking and inauguration of 250 projects held for the 80th anniversary of the August Revolution and National Day. Party Chief Tô Lâm and Prime Minister Phạm Minh Chính were in the audience. The robots walked, waved, and gestured, as a first look at machines meant for production lines, services, and daily life. The same platform was shown at the National Achievement Exhibition at the National Exposition Centre.
 
