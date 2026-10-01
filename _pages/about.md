@@ -6,7 +6,7 @@ subtitle: Robotics Engineer, VinMotion
 
 profile:
   align: right
-  image: huy-vinmotion.jpg
+  image: profile-huy-robot.jpg
   image_circular: false
   more_info: >
     <p>Robotics Engineer</p>

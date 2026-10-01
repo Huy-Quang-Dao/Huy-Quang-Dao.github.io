@@ -9,7 +9,7 @@ category: research
 
 **X-BFM: a Behavioral Foundation Model for Extreme Humanoid Control via World-Model Conditioning and Decoupled Recovery Priors.** Submitted to the IEEE International Conference on Robotics and Automation (ICRA). Not yet published.
 
-{% include video.liquid path="assets/video/xbfm-icra.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+{% include video.liquid path="assets/video/xbfm-intro.mp4" class="img-fluid rounded z-depth-1" controls=true caption="Opening 15 seconds." %}
 
 Extreme skills and ordinary recovery are usually trained as separate policies. X-BFM treats them as one behavioral model. A world-model conditioner and decoupled recovery priors let the same system teleoperate, commit to a dynamic move such as a flip, and stand back up when the landing or a push goes wrong.
 

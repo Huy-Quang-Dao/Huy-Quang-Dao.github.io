@@ -11,7 +11,7 @@ category: research
 
 Equal contribution: Chuong Nguyen, Quang Huy Dao, and Loc Pham, with Truong Nguyen and Quan Nguyen. Affiliations: VinMotion, VinUniversity, and the University of Southern California.
 
-{% include video.liquid path="assets/video/standing-up-humanoids.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+{% include video.liquid path="assets/video/standing-up-intro.mp4" class="img-fluid rounded z-depth-1" controls=true caption="Opening 15 seconds." %}
 
 A full-size humanoid that falls on anything other than a lab floor still has to stand up. This paper optimizes contact timing and a whole-body trajectory for aggressive get-up maneuvers, including martial-arts-style kip-ups, then tracks that plan with a learned controller.
 

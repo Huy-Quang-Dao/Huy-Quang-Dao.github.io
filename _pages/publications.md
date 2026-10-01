@@ -17,7 +17,7 @@ nav_order: 1
 
 <div class="publications">
 
-<h1>submitted</h1>
+<h1>under review</h1>
 
 {% bibliography -f papers -q @*[year=2026]* --group_by none %}
 
