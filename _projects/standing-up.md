@@ -9,7 +9,7 @@ category: research
 
 **Robust and Optimized Aggressive Standing-Up Maneuvers for Humanoid Robots across Diverse Terrains.** Under review at the IEEE-RAS International Conference on Humanoid Robots (Humanoids).
 
-Equal contribution: Chuong Nguyen, Quang Huy Dao, and Loc Pham, with Truong Nguyen and Quan Nguyen. Affiliations: VinMotion, VinUniversity, and the University of Southern California.
+Equal contribution: Chuong Nguyen, Huy Dao, and Loc Pham, with Truong Nguyen and Quan Nguyen.
 
 {% include video.liquid path="assets/video/standing-up-intro.mp4" class="img-fluid rounded z-depth-1" controls=true caption="Opening 4 seconds." %}
 

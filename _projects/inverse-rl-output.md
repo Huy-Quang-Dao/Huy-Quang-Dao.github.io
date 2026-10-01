@@ -9,7 +9,7 @@ category: preprint
 
 **Model-Based and Off-Policy Data-Driven Inverse Reinforcement Learning for Linear Discrete-Time Two-Player Zero-Sum Games via Output Feedback.** Preprint.
 
-Quang Huy Dao, Quoc Dat Lai, and Phuong Nam Dao.
+Huy Dao, Quoc Dat Lai, and Phuong Nam Dao.
 
 The learner imitates an expert zero-sum policy from output feedback, first with a model and then from input-output-disturbance data alone. The plots below are temporary result figures.
 

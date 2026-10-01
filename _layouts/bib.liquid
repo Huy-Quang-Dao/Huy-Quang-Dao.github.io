@@ -25,7 +25,17 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
-      {% if entry.preview %}
+      {% if entry.teaser %}
+        <video
+          src="{{ entry.teaser | relative_url }}"
+          class="preview z-depth-1 rounded"
+          style="width: 100%; height: auto;"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      {% elsif entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
@@ -251,7 +261,7 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">{% if entry.website contains 'SIRL' %}Project page{% else %}Website{% endif %}</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

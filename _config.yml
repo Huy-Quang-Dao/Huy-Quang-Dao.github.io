@@ -3,13 +3,13 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Quang Huy
+first_name: Huy
 middle_name: 
 last_name: Dao
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Quang Huy Dao is a robotics engineer at VinMotion working on humanoid motion, fall recovery, and learning-based control.
+  Huy Dao is a robotics engineer at VinMotion working on humanoid motion, fall recovery, and learning-based control.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: humanoid robots, reinforcement learning, optimal control, fall recovery, VinMotion, robotics
@@ -256,7 +256,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Dao]
-  first_name: [Quang Huy, Huy, Q. H., Q.]
+  first_name: [Huy, Q., Q. H.]
 
   style: apa
   locale: en
@@ -309,7 +309,7 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
-    supp,
+    teaser,
     video,
     website,
   ]

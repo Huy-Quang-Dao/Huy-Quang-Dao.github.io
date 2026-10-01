@@ -34,8 +34,8 @@
 - title: Selected publications
   type: list
   contents:
-    - Dao, P. N. and Dao, Q. H. H∞ tracking control for perturbed discrete-time systems using On/Off policy Q-learning algorithms. <em>Chaos, Solitons & Fractals</em>, 2025.
-    - Cao, T. T., Dao, Q. H., and Dao, P. N. Q-Learning Algorithm for F16 Aircraft. <em>ICCAIS</em>, 2023.
+    - Dao, P. N. and Dao, H. H∞ tracking control for perturbed discrete-time systems using On/Off policy Q-learning algorithms. <em>Chaos, Solitons & Fractals</em>, 2025.
+    - Cao, T. T., Dao, H., and Dao, P. N. Q-Learning Algorithm for F16 Aircraft. <em>ICCAIS</em>, 2023.
 
 - title: Interests
   type: nested_list
