@@ -412,6 +412,11 @@ ninja.data = [{
           description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iHOCBF/";
+            },},{id: "projects-inverse-rl-via-output-feedback",
+          title: 'Inverse RL via output feedback',
+          description: "Preprint. Model-based and off-policy inverse RL for zero-sum games from output data.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/inverse-rl-output/";
             },},{id: "projects-vinmotion-minimotion",
           title: 'VinMotion MiniMotion',
           description: "Compact humanoid for flips, fall recovery, climbing, and balance under load.",
