@@ -21,6 +21,8 @@ nav_order: 1
 
 {% bibliography -f papers -q @*[year=2026]* --group_by none %}
 
+{% bibliography -f review --group_by none %}
+
 <h1>preprints</h1>
 
 {% bibliography -f preprints --group_by none %}
