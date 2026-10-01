@@ -2,7 +2,7 @@
 layout: page
 title: VinMotion Motion 2
 description: Global debut at CES 2026. Walking, boxing, and dancing.
-img: assets/img/motion2-family-day.jpg
+img: assets/img/motion2-card.jpg
 importance: 1
 category: work
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: VinMotion Motion 1
 description: Synchronized humanoid performance for the public, including the A80 national celebrations.
-img: assets/img/motion1-a80.jpg
+img: assets/img/motion1-card.jpg
 importance: 2
 category: work
 ---

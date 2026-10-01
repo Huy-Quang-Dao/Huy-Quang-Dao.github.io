@@ -2,11 +2,11 @@
 layout: page
 title: CitoMimic
 description: Trajectory optimization with RL motion tracking on the Unitree G1.
-img: assets/img/citomimic-g1.jpg
+video: assets/video/citomimic-cover.mp4
 importance: 1
 category: lab
 ---
 
 Trajectory optimization with a motion-tracking policy, on the Unitree G1.
 
-[Project page](https://humanoid-research.github.io/citomimic/)
+<video src="{{ '/assets/video/citomimic-cover.mp4' | relative_url }}" style="width: 100%; height: auto;" autoplay muted loop playsinline></video>
