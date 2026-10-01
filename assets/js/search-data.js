@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Robotics engineer working on humanoid motion at VinMotion.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -376,10 +369,13 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-motion-1-performed-for-the-public-at-the-a80-national-celebrations-in-hanoi-after-a-synchronized-dance-at-vingroup-s-32nd-anniversary",
+            },},{id: "news-joined-vinmotion-as-a-robotics-engineer",
+          title: 'Joined VinMotion as a Robotics Engineer.',
+          description: "",
+          section: "News",},{id: "news-motion-1-performed-for-the-public-at-the-a80-national-celebrations-in-hanoi-after-a-synchronized-dance-at-vingroup-s-32nd-anniversary",
           title: 'Motion 1 performed for the public at the A80 national celebrations in Hanoi,...',
           description: "",
-          section: "News",},{id: "news-motion-2-debuted-at-ces-2026-in-las-vegas-with-live-walking-boxing-dancing-and-whole-body-teleoperation",
+          section: "News",},{id: "news-motion-2-debuted-at-ces-2026-in-las-vegas-with-live-walking-boxing-and-dancing",
           title: 'Motion 2 debuted at CES 2026 in Las Vegas, with live walking, boxing,...',
           description: "",
           section: "News",},{id: "news-minimotion-went-on-stage-at-vingroup-s-33rd-anniversary-flips-fall-recovery-and-balance-under-load",
@@ -387,6 +383,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-two-manuscripts-are-under-review-aggressive-standing-up-at-humanoids-and-x-bfm-at-icra",
           title: 'Two manuscripts are under review: aggressive standing-up at Humanoids, and X-BFM at ICRA....',
+          description: "",
+          section: "News",},{id: "news-robotics-engineer-at-vinmotion-inc-us",
+          title: 'Robotics Engineer at VinMotion Inc. (US).',
           description: "",
           section: "News",},{id: "projects-introduction-to-reinforcement-learning-cornell",
           title: 'Introduction to Reinforcement Learning (Cornell)',
@@ -425,17 +424,17 @@ ninja.data = [{
               window.location.href = "/projects/motion-1/";
             },},{id: "projects-vinmotion-motion-2",
           title: 'VinMotion Motion 2',
-          description: "Global debut at CES 2026. Walking, boxing, dancing, teleoperation, and hot-swappable batteries.",
+          description: "Global debut at CES 2026. Walking, boxing, and dancing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/motion-2/";
             },},{id: "projects-aggressive-standing-up",
           title: 'Aggressive standing-up',
-          description: "Submitted to Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.",
+          description: "Under review at Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/standing-up/";
             },},{id: "projects-x-bfm",
           title: 'X-BFM',
-          description: "Submitted to ICRA. A behavioral foundation model for extreme humanoid control.",
+          description: "Under review at ICRA. A behavioral foundation model for extreme humanoid control.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/x-bfm/";
             },},{
