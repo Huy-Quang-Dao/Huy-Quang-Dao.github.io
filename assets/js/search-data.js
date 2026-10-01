@@ -11,17 +11,24 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "publications by categories in reversed chronological order  *equal contribution",
+          description: "Published work, and manuscripts currently under review. An asterisk marks equal contribution.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "Humanoid systems at VinMotion, manuscripts under review, and earlier research.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Robotics engineer working on humanoid motion at VinMotion.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -43,17 +50,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
       },{id: "post-a-post-with-tabs",
@@ -276,17 +272,6 @@ ninja.data = [{
             window.location.href = "/blog/2022/giscus-comments/";
           
         },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
       },{id: "post-a-post-with-redirect",
         
           title: "a post with redirect",
@@ -391,8 +376,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-hello-world",
-          title: 'Hello world!!!',
+            },},{id: "news-motion-1-performed-for-the-public-at-the-a80-national-celebrations-in-hanoi-after-a-synchronized-dance-at-vingroup-s-32nd-anniversary",
+          title: 'Motion 1 performed for the public at the A80 national celebrations in Hanoi,...',
+          description: "",
+          section: "News",},{id: "news-motion-2-debuted-at-ces-2026-in-las-vegas-with-live-walking-boxing-dancing-and-whole-body-teleoperation",
+          title: 'Motion 2 debuted at CES 2026 in Las Vegas, with live walking, boxing,...',
+          description: "",
+          section: "News",},{id: "news-minimotion-went-on-stage-at-vingroup-s-33rd-anniversary-flips-fall-recovery-and-balance-under-load",
+          title: 'MiniMotion went on stage at Vingroup’s 33rd anniversary: flips, fall recovery, and balance...',
+          description: "",
+          section: "News",},{id: "news-two-manuscripts-are-under-review-aggressive-standing-up-at-humanoids-and-x-bfm-at-icra",
+          title: 'Two manuscripts are under review: aggressive standing-up at Humanoids, and X-BFM at ICRA....',
           description: "",
           section: "News",},{id: "projects-introduction-to-reinforcement-learning-cornell",
           title: 'Introduction to Reinforcement Learning (Cornell)',
@@ -439,40 +433,51 @@ ninja.data = [{
           description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iHOCBF/";
+            },},{id: "projects-vinmotion-minimotion",
+          title: 'VinMotion MiniMotion',
+          description: "Compact humanoid for flips, fall recovery, climbing, and balance under load.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/minimotion/";
+            },},{id: "projects-vinmotion-motion-1",
+          title: 'VinMotion Motion 1',
+          description: "Synchronized humanoid performance for the public, including the A80 national celebrations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/motion-1/";
+            },},{id: "projects-vinmotion-motion-2",
+          title: 'VinMotion Motion 2',
+          description: "Global debut at CES 2026. Walking, boxing, dancing, teleoperation, and hot-swappable batteries.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/motion-2/";
+            },},{id: "projects-aggressive-standing-up",
+          title: 'Aggressive standing-up',
+          description: "Submitted to Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/standing-up/";
+            },},{id: "projects-x-bfm",
+          title: 'X-BFM',
+          description: "Submitted to ICRA. A behavioral foundation model for extreme humanoid control.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/x-bfm/";
             },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%64%61%6F%71%75%61%6E%67%68%75%79%32%32%30%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/Huy-Quang-Dao", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://www.linkedin.com/in/quang-huy-đào-395a36291", "_blank");
         },
       },{
       id: 'light-theme',
