@@ -291,6 +291,7 @@ enable_publication_badges:
 filtered_bibtex_keywords:
   [
     abbr,
+    etal,
     abstract,
     additional_info,
     altmetric,

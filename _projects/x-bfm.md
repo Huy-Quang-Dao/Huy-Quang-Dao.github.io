@@ -9,7 +9,7 @@ category: research
 
 **X-BFM: a Behavioral Foundation Model for Extreme Humanoid Control via World-Model Conditioning and Decoupled Recovery Priors.** Under review at the IEEE International Conference on Robotics and Automation (ICRA).
 
-Dai-Nhan Duong, Huy Dao, Khoa Vu, Hieu Luong, Thuong Tran, An Le, Tuyen P. Le, Vu Dao, Truong Nguyen, and Quan Nguyen.
+Huy Dao et al.
 
 {% include video.liquid path="assets/video/xbfm-intro.mp4" class="img-fluid rounded z-depth-1" controls=true caption="Opening 10 seconds." %}
 
