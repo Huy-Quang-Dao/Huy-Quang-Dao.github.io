@@ -25,8 +25,6 @@ I joined [VinMotion](https://vinmotion.net/) in April 2025 as a Robotics Enginee
 
 I studied Control Engineering and Automation at Hanoi University of Science and Technology, and before VinMotion I was a research scientist in the Advanced Control and Robotics group with Prof. Phuong Nam Dao. That work was on reinforcement learning, H∞ games, and optimal tracking.
 
-Two manuscripts are under review: standing-up across diverse terrains at Humanoids, and [X-BFM](/projects/x-bfm/) at ICRA. A [CV](/cv/) is available as a PDF.
-
 ### Awards
 
 - **Employee of the Year, VinMotion**, 2025.
