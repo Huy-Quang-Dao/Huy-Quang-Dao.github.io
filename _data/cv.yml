@@ -12,8 +12,14 @@
   type: time_table
   contents:
     - title: Robotics Engineer
-      institution: VinMotion, Vingroup, Hanoi, Vietnam
-      year: 2025 — present
+      institution: VinMotion Inc., California, USA
+      year: October 2026 — present
+      description:
+        - Whole-body control, general motion tracking, and perceptive whole-body control.
+        - Behavioral foundation models for humanoid control.
+    - title: Robotics Engineer
+      institution: VinMotion, Hanoi, Vietnam
+      year: April 2025 — September 2026
       description:
         - Whole-body motion for the Motion 1, Motion 2, and MiniMotion humanoids.
         - Public deployments include synchronized performances at the A80 national celebrations and the global debut of Motion 2 at CES 2026.
@@ -24,6 +30,12 @@
       description:
         - Model-free Q-learning for H∞ tracking of perturbed discrete-time systems.
         - Optimal tracking with unknown user-defined costs and constrained inputs.
+
+- title: Awards
+  type: list
+  contents:
+    - <strong>Employee of the Year, VinMotion</strong>, 2025.
+    - <strong>Second prize</strong>, Vietnam Mathematical Olympiad for Students, Vietnam Mathematical Society, 2022. <a href="/assets/pdf/vietnam-math-olympiad-2022.pdf">Certificate</a>.
 
 - title: Manuscripts under review
   type: list
