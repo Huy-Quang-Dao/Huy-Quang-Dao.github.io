@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Robotics engineer working on humanoid motion at VinMotion.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
