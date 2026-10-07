@@ -9,7 +9,7 @@ category: research
 
 **Robust and Optimized Aggressive Standing-Up Maneuvers for Humanoid Robots across Diverse Terrains.** Under review at the IEEE-RAS International Conference on Humanoid Robots (Humanoids).
 
-Huy Dao et al.
+Quang Huy Dao et al.
 
 {% include video.liquid path="assets/video/standing-up-intro.mp4" class="img-fluid rounded z-depth-1" controls=true caption="Opening 4 seconds." %}
 

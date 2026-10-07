@@ -9,7 +9,7 @@ category: preprint
 
 **Zero-Shot Linear Quadratic Regulation from Reward-Free Data: Structured Successor Features with Stability and Finite-Sample Guarantees.** Preprint.
 
-Huy Dao and Khanh Thai.
+Quang Huy Dao and Khanh Thai.
 
 One reward-free dataset is compressed once. Any linear-quadratic task is then read out in closed form, with stability and finite-sample guarantees, and without another pass over the data.
 
