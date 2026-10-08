@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Humanoid systems at VinMotion, manuscripts under review, and earlier research.
+description: Humanoid systems at VinMotion, accepted papers, and earlier research.
 nav: true
 nav_order: 2
-display_categories: [work, research, preprint, lab]
+display_categories: [work, accepted, research, preprint, lab]
 horizontal: false
 ---
 
@@ -18,6 +18,7 @@ horizontal: false
     <h2 class="category">
       {% case category %}
         {% when 'work' %}Systems
+        {% when 'accepted' %}Accepted
         {% when 'research' %}Under review
         {% when 'preprint' %}Preprints
         {% when 'lab' %}Research

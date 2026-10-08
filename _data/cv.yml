@@ -40,7 +40,8 @@
 - title: Manuscripts under review
   type: list
   contents:
-    - <strong>Robust and Optimized Aggressive Standing-Up Maneuvers for Humanoid Robots across Diverse Terrains.</strong> Submitted to the IEEE-RAS International Conference on Humanoid Robots (Humanoids). Quang Huy Dao et al.
+    - <strong>Robust and Optimized Aggressive Standing-Up Maneuvers for Humanoid Robots across Diverse Terrains.</strong> Accepted at the IEEE-RAS International Conference on Humanoid Robots (Humanoids). Equal contribution: Chuong Nguyen and Quang Huy Dao, with Loc Pham, Truong Nguyen, and Quan Nguyen.
+    - <strong>Ukemi-SafeFall: An Ukemi-inspired Injury-Aware Falling and Recovery.</strong> Accepted at Humanoids. With Anh Duc Tran, Anh-Quang Vu, and coauthors.
     - <strong>X-BFM: a Behavioral Foundation Model for Extreme Humanoid Control via World-Model Conditioning and Decoupled Recovery Priors.</strong> Submitted to the IEEE International Conference on Robotics and Automation (ICRA).
 
 - title: Selected publications

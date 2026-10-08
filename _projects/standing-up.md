@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Aggressive standing-up
-description: Under review at Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.
+description: Accepted at Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.
 img: assets/img/standing-up-card.jpg
 importance: 1
-category: research
+category: accepted
 ---
 
-**Robust and Optimized Aggressive Standing-Up Maneuvers for Humanoid Robots across Diverse Terrains.** Under review at the IEEE-RAS International Conference on Humanoid Robots (Humanoids).
+**Robust and Optimized Aggressive Standing-Up Maneuvers for Humanoid Robots across Diverse Terrains.** Accepted at the IEEE-RAS International Conference on Humanoid Robots (Humanoids).
 
-Quang Huy Dao et al.
+Chuong Nguyen and Quang Huy Dao contributed equally, with Loc Pham, Truong Nguyen, and Quan Nguyen.
 
 {% include video.liquid path="assets/video/standing-up-intro.mp4" class="img-fluid rounded z-depth-1" controls=true caption="Opening 4 seconds." %}
 

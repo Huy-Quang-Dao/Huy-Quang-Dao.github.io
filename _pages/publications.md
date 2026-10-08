@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Published work, and manuscripts currently under review. An asterisk marks equal contribution.
+description: Accepted papers and manuscripts currently under review. An asterisk marks equal contribution.
 years1: [2025, 2024, 2023]
 years2: [2025,2024, 2023]
 nav: true
@@ -17,9 +17,13 @@ nav_order: 1
 
 <div class="publications">
 
+<h1>accepted</h1>
+
+{% bibliography -f papers -q @*[status=accepted]* --group_by none %}
+
 <h1>under review</h1>
 
-{% bibliography -f papers -q @*[year=2026]* --group_by none %}
+{% bibliography -f papers -q @*[status=review]* --group_by none %}
 
 {% bibliography -f review --group_by none %}
 
