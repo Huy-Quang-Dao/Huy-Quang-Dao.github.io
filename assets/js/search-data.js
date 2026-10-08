@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Published work, and manuscripts currently under review. An asterisk marks equal contribution.",
+          description: "Accepted papers and manuscripts currently under review. An asterisk marks equal contribution.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Humanoid systems at VinMotion, manuscripts under review, and earlier research.",
+          description: "Humanoid systems at VinMotion, accepted papers, and earlier research.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -388,11 +388,14 @@ ninja.data = [{
           section: "News",},{id: "news-minimotion-went-on-stage-at-vingroup-s-33rd-anniversary-flips-fall-recovery-and-balance-under-load",
           title: 'MiniMotion went on stage at Vingroup’s 33rd anniversary: flips, fall recovery, and balance...',
           description: "",
-          section: "News",},{id: "news-two-manuscripts-are-under-review-aggressive-standing-up-at-humanoids-and-x-bfm-at-icra",
-          title: 'Two manuscripts are under review: aggressive standing-up at Humanoids, and X-BFM at ICRA....',
+          section: "News",},{id: "news-x-bfm-is-under-review-at-icra",
+          title: 'X-BFM is under review at ICRA.',
           description: "",
           section: "News",},{id: "news-robotics-engineer-at-vinmotion-inc-us",
           title: 'Robotics Engineer at VinMotion Inc. (US).',
+          description: "",
+          section: "News",},{id: "news-two-papers-were-accepted-at-humanoids-aggressive-standing-up-across-diverse-terrains-and-ukemi-safefall",
+          title: 'Two papers were accepted at Humanoids: aggressive standing-up across diverse terrains and Ukemi-SafeFall....',
           description: "",
           section: "News",},{id: "projects-introduction-to-reinforcement-learning-cornell",
           title: 'Introduction to Reinforcement Learning (Cornell)',
@@ -451,9 +454,14 @@ ninja.data = [{
               window.location.href = "/projects/pickup-momentum/";
             },},{id: "projects-aggressive-standing-up",
           title: 'Aggressive standing-up',
-          description: "Under review at Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.",
+          description: "Accepted at Humanoids. Optimized get-up maneuvers for humanoids on diverse terrain.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/standing-up/";
+            },},{id: "projects-ukemi-safefall",
+          title: 'Ukemi-SafeFall',
+          description: "Accepted at Humanoids. Ukemi-inspired falling and recovery.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ukemi-safefall/";
             },},{id: "projects-x-bfm",
           title: 'X-BFM',
           description: "Under review at ICRA. A behavioral foundation model for extreme humanoid control.",
