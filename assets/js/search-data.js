@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Accepted papers and manuscripts currently under review. An asterisk marks equal contribution.",
+          description: "Published work, and manuscripts currently under review. An asterisk marks equal contribution.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
