@@ -17,6 +17,15 @@ nav_order: 1
 
 <div class="publications">
 
+<h1>conference &amp; journal articles</h1>
+
+{% bibliography -f papers -q @*[status=accepted]* %}
+
+{% for y in page.years1 %}
+  <!-- <h2 class="year">{{y}}</h2> -->
+  {% bibliography -f papers -q @*[year={{y}}]* %}
+{% endfor %}
+
 <h1>under review</h1>
 
 {% bibliography -f papers -q @*[status=review]* --group_by none %}
@@ -26,15 +35,6 @@ nav_order: 1
 <h1>preprints</h1>
 
 {% bibliography -f preprints --group_by none %}
-
-<h1>conference &amp; journal articles</h1>
-
-{% bibliography -f papers -q @*[status=accepted]* --group_by none %}
-
-{% for y in page.years1 %}
-  <!-- <h2 class="year">{{y}}</h2> -->
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
 
 <h1> short papers &amp; reports  </h1>
 
