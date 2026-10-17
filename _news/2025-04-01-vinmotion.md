@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined VinMotion as a Robotics Engineer.
+Joined [VinMotion](https://vinmotion.net/) as a Robotics Engineer.

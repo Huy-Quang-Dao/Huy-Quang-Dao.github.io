@@ -18,17 +18,12 @@ social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 6
+  limit: 9
 ---
 
 I joined [VinMotion](https://vinmotion.net/) in April 2025 as a Robotics Engineer, working on whole-body motion for humanoid robots that walk, dance, recover from falls, and hold up in front of a crowd. Since October 2026 I have been a Robotics Engineer at VinMotion Inc. (US). The photo is from Vingroup’s 33rd anniversary, with MiniMotion.
 
 I studied Control Engineering and Automation at Hanoi University of Science and Technology, and before VinMotion I was a research scientist in the Advanced Control and Robotics group with Prof. Phuong Nam Dao. That work was on reinforcement learning, H∞ games, and optimal tracking.
-
-### Awards
-
-- **Employee of the Year, VinMotion**, 2025.
-- **Second prize**, Vietnam Mathematical Olympiad for Students, Vietnam Mathematical Society, 2022. [Certificate](/assets/pdf/vietnam-math-olympiad-2022.pdf).
 
 ### Systems I work on
 
