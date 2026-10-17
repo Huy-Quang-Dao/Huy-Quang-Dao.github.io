@@ -376,14 +376,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-paper-accepted-at-chaos-solitons-amp-amp-fractals-q1-h-tracking-control-for-perturbed-discrete-time-systems-using-on-off-policy-q-learning-algorithms",
-          title: 'Paper accepted at Chaos, Solitons &amp;amp;amp; Fractals (Q1): H∞ tracking control for perturbed...',
+            },},{id: "news-paper-accepted-at-chaos-solitons-amp-amp-fractals-q1",
+          title: 'Paper accepted at Chaos, Solitons &amp;amp;amp; Fractals (Q1).',
           description: "",
           section: "News",},{id: "news-joined-vinmotion-as-a-robotics-engineer",
           title: 'Joined VinMotion as a Robotics Engineer.',
           description: "",
-          section: "News",},{id: "news-graduated-with-a-b-eng-in-control-engineering-and-automation-from-hanoi-university-of-science-and-technology-hust",
-          title: 'Graduated with a B.Eng. in Control Engineering and Automation from Hanoi University of...',
+          section: "News",},{id: "news-graduated-from-the-talented-engineer-program-in-control-engineering-and-automation-at-hanoi-university-of-science-and-technology-hust",
+          title: 'Graduated from the Talented Engineer Program in Control Engineering and Automation at Hanoi...',
           description: "",
           section: "News",},{id: "news-motion-1-performed-for-the-public-at-the-a80-national-celebrations-in-hanoi-after-a-synchronized-dance-at-vingroup-s-32nd-anniversary",
           title: 'Motion 1 performed for the public at the A80 national celebrations in Hanoi,...',
