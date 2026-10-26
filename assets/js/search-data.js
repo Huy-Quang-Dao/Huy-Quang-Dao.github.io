@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Humanoid systems at VinMotion, accepted papers, and earlier research.",
+          description: "Humanoid systems I work on at VinMotion, plus short research projects that have not become papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -400,8 +400,8 @@ ninja.data = [{
           section: "News",},{id: "news-robotics-engineer-at-vinmotion-inc-us",
           title: 'Robotics Engineer at VinMotion Inc. (US).',
           description: "",
-          section: "News",},{id: "news-two-papers-were-accepted-at-humanoids-aggressive-standing-up-across-diverse-terrains-and-ukemi-safefall",
-          title: 'Two papers were accepted at Humanoids: aggressive standing-up across diverse terrains and Ukemi-SafeFall....',
+          section: "News",},{id: "news-two-papers-were-accepted-at-humanoids-2026-aggressive-standing-up-across-diverse-terrains-and-ukemi-safefall",
+          title: 'Two papers were accepted at Humanoids 2026: aggressive standing-up across diverse terrains and...',
           description: "",
           section: "News",},{id: "projects-introduction-to-reinforcement-learning-cornell",
           title: 'Introduction to Reinforcement Learning (Cornell)',
@@ -498,6 +498,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/quang-huy-đào-395a36291", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=4geZK80AAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
