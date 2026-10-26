@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[X-BFM](/projects/x-bfm/) is under review at ICRA.
+[X-BFM](https://humanoid-research.github.io/x-bfm/) is under review at ICRA.

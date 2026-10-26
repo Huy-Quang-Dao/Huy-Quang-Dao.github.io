@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Humanoid systems at VinMotion, accepted papers, and earlier research.
+description: Humanoid systems I work on at VinMotion, plus short research projects that have not become papers.
 nav: true
 nav_order: 2
-display_categories: [work, accepted, research, preprint, lab]
+display_categories: [work, lab]
 horizontal: false
 ---
 
