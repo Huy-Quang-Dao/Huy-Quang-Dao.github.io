@@ -87,6 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 blog_name: notes # blog_name will be displayed in your blog page
 blog_description: notes on humanoid control and robotics
 permalink: /blog/:year/:title/
+future: true # publish news dated after the build day (e.g. the 1 Nov 2026 AESCTE item)
 lsi: false # produce an index for related posts
 
 # Pagination

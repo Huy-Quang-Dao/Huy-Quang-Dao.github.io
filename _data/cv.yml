@@ -47,7 +47,7 @@
 - title: Selected publications
   type: list
   contents:
-    - Nguyen, D. C., Dao, Q. H., and Dao, P. N. A model free approach for continuous-time optimal tracking control with unknown user-define cost and constrained control input via advantage function. <em>Aerospace Science and Technology</em>, 2026. Accepted.
+    - Nguyen, D. C., Dao, Q. H., and Dao, P. N. A Q-learning approach for optimal tracking constrained control using unknown user-define cost and advantage function with applications to F-16 Aircraft. <em>Aerospace Science and Technology</em>, 2026. Accepted.
     - Dao, P. N. and Dao, Q. H. H∞ tracking control for perturbed discrete-time systems using On/Off policy Q-learning algorithms. <em>Chaos, Solitons & Fractals</em>, 2025.
     - Cao, T. T., Dao, Q. H., and Dao, P. N. Q-Learning Algorithm for F16 Aircraft. <em>ICCAIS</em>, 2023.
 
