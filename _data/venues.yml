@@ -5,6 +5,10 @@
   url: https://www.sciencedirect.com/journal/chaos-solitons-and-fractals
   color: "#6b2d5b"
 
+"AESCTE":
+  url: https://www.sciencedirect.com/journal/aerospace-science-and-technology
+  color: "#1b4f72"
+
 "ICCAIS":
   url: https://ieeexplore.ieee.org/
   color: "#1a5276"

@@ -18,7 +18,7 @@ social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 9
+  limit: 10
 ---
 
 I joined [VinMotion](https://vinmotion.net/) in April 2025 as a Robotics Engineer, working on whole-body motion for humanoid robots that walk, dance, recover from falls, and hold up in front of a crowd. Since October 2026 I have been a Robotics Engineer at VinMotion Inc. (US). The photo is from Vingroup’s 33rd anniversary, with MiniMotion.
