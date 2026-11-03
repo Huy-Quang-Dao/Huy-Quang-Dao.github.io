@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Humanoid systems I work on at VinMotion, plus short research projects that have not become papers.",
+          description: "Humanoid systems I work on at VinMotion, open-source tools, and short research projects that may grow into papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
