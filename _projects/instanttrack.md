@@ -3,8 +3,8 @@ layout: page
 title: InstantTrack
 description: Whole-body motion tracking for the Unitree G1 in about 7 minutes on one GPU. Open source.
 video: assets/video/instanttrack.mp4
-importance: 0
-category: lab
+importance: 1
+category: opensource
 github: https://github.com/Huy-Quang-Dao/instantTrack
 github_stars: Huy-Quang-Dao/instantTrack
 ---

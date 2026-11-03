@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Humanoid systems I work on at VinMotion, plus short research projects that have not become papers.
+description: Humanoid systems I work on at VinMotion, open-source tools, and short research projects that may grow into papers.
 nav: true
 nav_order: 2
-display_categories: [work, lab]
+display_categories: [work, opensource, lab]
 horizontal: false
 ---
 
@@ -21,6 +21,7 @@ horizontal: false
         {% when 'accepted' %}Accepted
         {% when 'research' %}Under review
         {% when 'preprint' %}Preprints
+        {% when 'opensource' %}Open source
         {% when 'lab' %}Research
         {% else %}{{ category }}
       {% endcase %}
