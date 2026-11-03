@@ -436,6 +436,11 @@ ninja.data = [{
           description: "iterative Discrete-time High-order Control Barrier Function (Julia Package)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iHOCBF/";
+            },},{id: "projects-instanttrack",
+          title: 'InstantTrack',
+          description: "Whole-body motion tracking for the Unitree G1 in about 7 minutes on one GPU. Open source.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/instanttrack/";
             },},{id: "projects-inverse-rl-via-output-feedback",
           title: 'Inverse RL via output feedback',
           description: "Preprint. Model-based and off-policy inverse RL for zero-sum games from output data.",
