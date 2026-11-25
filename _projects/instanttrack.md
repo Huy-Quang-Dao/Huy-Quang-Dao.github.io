@@ -27,6 +27,6 @@ Next up is **InstantGMT**: the same training ideas applied to general motion tra
 
 ## Built on InstantTrack
 
-InstantTrack is MIT-licensed, and other people have picked it up. These are the public repositories I found that build on its code, carry its training recipe to new robots, run it as a backend or baseline, or teach it.
+InstantTrack is MIT-licensed, and other people have picked it up. Below are the papers that cite it and the public repositories I found that build on its code, carry its training recipe to new robots, run it as a backend or baseline, or teach it.
 
 {% include instanttrack_users.liquid %}

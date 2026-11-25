@@ -41,14 +41,40 @@
   .itu-chips a { font-size: 0.75rem; padding: 0.15rem 0.55rem; border-radius: 999px; border: 1px solid var(--global-divider-color); color: var(--global-text-color-light) !important; }
   .itu-chips a:hover { border-color: var(--global-theme-color); text-decoration: none; }
   .itu-foot { font-size: 0.75rem; color: var(--global-text-color-light); margin-top: 1rem; }
+  .itu-papers { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 0.6rem; margin-bottom: 1.4rem; }
+  .itu-paper { display: flex; flex-direction: column; gap: 0.3rem; border: 1px solid var(--global-divider-color); border-left: 3px solid var(--global-theme-color); border-radius: 0.4rem; padding: 0.65rem 0.8rem; background: var(--global-card-bg-color); color: var(--global-text-color) !important; transition: border-color 0.15s; }
+  .itu-paper:hover { border-color: var(--global-theme-color); text-decoration: none; }
+  .itu-paper .itu-venue { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--global-theme-color); font-weight: 600; }
+  .itu-paper strong { font-size: 0.92rem; line-height: 1.3; }
+  .itu-paper .itu-authors { font-size: 0.78rem; color: var(--global-text-color-light); }
+  .itu-paper blockquote { margin: 0.2rem 0 0; padding: 0 0 0 0.6rem; border-left: 2px solid var(--global-divider-color); font-size: 0.8rem; font-style: italic; line-height: 1.4; color: var(--global-text-color); }
+  .itu-paper .itu-result { font-size: 0.78rem; color: var(--global-text-color-light); }
+  .itu-paper .itu-result i { color: var(--global-theme-color); margin-right: 0.25rem; }
 </style>
 
 <div class="itu-stats">
   <div class="itu-stat"><b>{{ n_repos }}</b><span>public repos build on, port or cite it</span></div>
   <div class="itu-stat"><b>{{ total_stars | divided_by: 1000.0 | round: 1 }}k</b><span>combined stars of those repos</span></div>
   <div class="itu-stat"><b><span data-github-stars="Huy-Quang-Dao/instantTrack"><span class="stars-count">218</span></span></b><span>stars on InstantTrack</span></div>
+  <div class="itu-stat"><b>{{ d.papers.size }}</b><span>papers and write-ups cite it</span></div>
   <div class="itu-stat"><b>{{ d.forks }}</b><span>direct forks</span></div>
   <div class="itu-stat"><b>4</b><span>generations of follow-up work</span></div>
+</div>
+
+<div class="itu-group" id="itu-papers" style="margin-top:0">
+  <h3><i class="fa-solid fa-scroll"></i>Cited in papers<small>{{ d.papers.size }}</small></h3>
+  <p>Research papers and technical write-ups that cite InstantTrack, with the sentence that cites it.</p>
+  <div class="itu-papers">
+    {% for p in d.papers %}
+    <a class="itu-paper" href="{{ p.url }}">
+      <span class="itu-venue">{{ p.venue }}</span>
+      <strong>{{ p.title }}</strong>
+      <span class="itu-authors">{{ p.authors }}</span>
+      <blockquote>“{{ p.quote }}”</blockquote>
+      {% if p.result %}<span class="itu-result"><i class="fa-solid fa-bolt"></i>{{ p.result }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
 </div>
 
 <div class="itu-tree" aria-label="Lineage of projects around InstantTrack">
@@ -79,6 +105,7 @@
     <a class="itu-node" href="https://github.com/jyl681/blinkmimic2">BlinkMimic 2</a>
     <a class="itu-node" href="https://github.com/VittorioPastore/m1mic-mlx">M1mic-MLX</a>
     <a class="itu-node" href="https://github.com/ROBOTIS-GIT/cyclo_mjlab">cyclo_mjlab</a>
+    <a class="itu-node" href="https://www.dollhouserobots.com/posts/super-gpc">SuperGPC</a>
   </div>
   <div class="itu-gen">
     <h6>Gen 3</h6>

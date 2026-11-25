@@ -4,6 +4,30 @@
 as_of: 2026-11-26
 forks: 15
 
+# Papers and technical write-ups that cite InstantTrack. Quotes are copied from the cited text.
+papers:
+  - title: "BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU"
+    authors: Fuyi Chen
+    venue: arXiv 2611.16422
+    url: https://arxiv.org/abs/2611.16422
+    quote: "InstantTrack (Dao, 2026) introduced EMA deployment, Muon and a reference residual in an open implementation. We build on this line."
+  - title: "XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute"
+    authors: Nico Bohlinger, Jan Peters
+    venue: arXiv 2611.20452
+    url: https://arxiv.org/abs/2611.20452
+    quote: "InstantTrack and BlinkMimic then reduced the time to learn all 40 clips of the LAFAN1 dataset on the Unitree G1 to about 3 minutes on a single consumer GPU."
+  - title: "Trust What Repeats: Capped World-Model Policy Gradients for Humanoid Motion Tracking"
+    authors: Xuzhe Dang, Stefan Edelkamp
+    venue: arXiv 2611.27648
+    url: https://arxiv.org/abs/2611.27648
+    quote: "InstantTrack and BlinkMimic speed up SuperMimic's line with a different optimizer, a residual policy, GPU graph capture [...] and train 40 LAFAN1 clips in minutes."
+  - title: "SuperGPC: training a humanoid autoregressive motion policy fast, on one GPU"
+    authors: Carlos Diaz-Padron (Dollhouse)
+    venue: Blog post, 25 Nov 2026
+    url: https://www.dollhouserobots.com/posts/super-gpc
+    quote: "We integrated this work, and a mix of the optimizations from follow up projects InstantTrack (Dao, 2026), and BlinkMimic (Chen, 2026)."
+    result: "Generative Pretrained Controllers pipeline: about 8.5 days to about 30 hours of training on one RTX 5090"
+
 groups:
   - id: derived
     title: Built on InstantTrack's code
