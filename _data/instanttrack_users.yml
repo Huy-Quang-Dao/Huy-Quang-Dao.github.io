@@ -1,0 +1,68 @@
+# Public GitHub repositories that build on, port, run, benchmark or list InstantTrack.
+# Found with GitHub code search for "instantTrack" / "Huy-Quang-Dao/instantTrack"; each entry was
+# checked by reading the file that mentions it. Star counts are a snapshot taken on `as_of`.
+as_of: 2026-11-26
+forks: 15
+
+groups:
+  - id: derived
+    title: Built on InstantTrack's code
+    icon: fa-code-branch
+    blurb: Their license notices name InstantTrack as code they derive from, directly or through BlinkMimic.
+    repos:
+      - { repo: fuyichen0725/blinkmimic, name: BlinkMimic, stars: 331, note: "G1 tracking in ~3 min; derives directly from InstantTrack" }
+      - { repo: nico-bohlinger/xmimic, name: XMimic, stars: 206, note: "BlinkMimic's trainer rebuilt in JAX; benchmarks InstantTrack v1.3" }
+      - { repo: Roboparty/PartyMimic, name: PartyMimic, stars: 199, note: "Quick, precise, versatile humanoid mimic" }
+      - { repo: wbc-mjlab/wbc-mjlab, name: wbc-mjlab, stars: 186, note: "Universal whole-body tracking in mjlab" }
+      - { repo: Frank-ZY-Dou/ndm-gym, name: NDM Gym, stars: 93, note: "Neural world models; ships a BlinkMimic/InstantTrack algorithm" }
+      - { repo: jyl681/blinkmimic2, name: BlinkMimic 2, stars: 69, note: "One policy for all 129,491 BONES-SEED clips" }
+      - { repo: nico-bohlinger/xsoma, name: XSoma, stars: 34, note: "Rough-terrain velocity tracking in under a minute" }
+      - { repo: RoboticsResearchHubVN/InstantAMP, name: InstantAMP, stars: 32, note: "AMP in 30 min on one RTX 5090" }
+      - { repo: shangchaohu718/PERA, name: PERA, stars: 28, note: "Plug-in experts for continual whole-body control" }
+      - { repo: VittorioPastore/m1mic-mlx, name: M1mic-MLX, stars: 27, note: "Train the G1 tracker on a MacBook with MLX" }
+      - { repo: ROBOTIS-GIT/cyclo_mjlab, name: cyclo_mjlab, stars: 6, note: "ROBOTIS's mjlab toolkit for their robots" }
+      - { repo: fei-yang-wu/RLOpt, name: RLOpt, stars: 5, note: "RL with advanced optimization techniques" }
+      - { repo: TonyInvent/MacMimic, name: MacMimic, stars: 1, note: "OpenSprite humanoid trained on a MacBook Pro" }
+
+  - id: recipe
+    title: Port the training recipe
+    icon: fa-flask
+    blurb: They carry InstantTrack's ideas (Muon split, policy EMA, no-sync loop, structured world model) to new bodies and simulators.
+    repos:
+      - { repo: MyoHub/myosuite, name: MyoSuite, stars: 1291, note: "Musculoskeletal tracking; ships the BlinkMimic-InstantTrack license" }
+      - { repo: Motphys/Uni-SuperMimic, name: Uni-SuperMimic, stars: 319, note: "SuperMimic on UniLab; follows InstantTrack's Muon split" }
+      - { repo: kaibohex/muscle-supermimic, name: muscle-supermimic, stars: 55, note: "3.9 h to 1.8 h on MS-Human-700 with the InstantTrack recipe" }
+      - { repo: kkmjj0721/quadruped_supermimic, name: quadruped_supermimic, stars: 31, note: "World-model tracking for the Go2 quadruped" }
+
+  - id: run
+    title: Run, benchmark or reproduce it
+    icon: fa-gauge-high
+    blurb: InstantTrack as a backend, a baseline or a policy on a real robot stack.
+    repos:
+      - { repo: IoET-y/robot-skill-factory, name: robot-skill-factory, stars: 61, note: "Uses InstantTrack as its training backend, with patches" }
+      - { repo: basicv8vc/modded-supermimic, name: modded-supermimic, stars: 2, note: "G1 speedrun benchmark; InstantTrack v1.4 baseline" }
+      - { repo: ETHRoboticsClub/v1-walk-demo, name: ETHRC V1 walk demo, stars: 0, note: "ETH Robotics Club humanoid runs an InstantTrack policy in the browser" }
+      - { repo: zzw705140-cpu/instanttrack-Repro, name: InstantTrack-Repro, stars: 0, note: "End-to-end reproduction of InstantTrack" }
+
+  - id: lists
+    title: Featured in lists, courses and notes
+    icon: fa-book-open
+    blurb: Curated indexes and tutorials that teach or track InstantTrack.
+    repos:
+      - { repo: datawhalechina/every-embodied, name: every-embodied, stars: 4574, note: "Datawhale course: a chapter on InstantTrack and BlinkMimic speed-ups" }
+      - { repo: ImChong/Robotics_Notebooks, name: Robotics Notebooks, stars: 870, note: "Robotics wiki with an InstantTrack entity page" }
+      - { repo: miao-org/awesome-supermimic, name: awesome-supermimic, stars: 655, note: "Curated SuperMimic implementations" }
+      - { repo: bjrobotnewbie/RobotNewbieDocs, name: RobotNewbieDocs, stars: 8, note: "Beginner robotics docs" }
+      - { repo: QinnyuLan/SuperMimicCarnival, name: SuperMimicCarnival, stars: 3, note: "Index of verified SuperMimic reproductions" }
+
+# Smaller forks-of-forks and personal experiments that also credit InstantTrack.
+more:
+  - UNITYIIPP/partymimic
+  - Khanhtkp/xsoma_run
+  - EchoXuK/Supermimc-CarryBox
+  - Hammer591/exo-mimic
+  - GWinfinity/cloud-robotics-sim
+  - enffft/supermimic
+  - doublenuo/Notes-Atlas
+  - Hadrien-Cornier/hadrien-cornier.github.io
+  - vcmman/1nrobotics-site

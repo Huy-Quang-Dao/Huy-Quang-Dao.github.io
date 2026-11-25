@@ -1,0 +1,136 @@
+{% assign d = site.data.instanttrack_users %}
+{% assign n_repos = d.more.size %}
+{% assign total_stars = 0 %}
+{% for g in d.groups %}
+  {% assign n_repos = n_repos | plus: g.repos.size %}
+  {% for r in g.repos %}{% assign total_stars = total_stars | plus: r.stars %}{% endfor %}
+{% endfor %}
+
+<style>
+  .itu-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; margin: 1rem 0 1.5rem; }
+  .itu-stat { border: 1px solid var(--global-divider-color); border-radius: 0.6rem; padding: 0.8rem 0.6rem; text-align: center; background: var(--global-card-bg-color); }
+  .itu-stat b { display: block; font-size: 1.7rem; line-height: 1.1; color: var(--global-theme-color); font-variant-numeric: tabular-nums; }
+  .itu-stat > span { font-size: 0.8rem; color: var(--global-text-color-light); }
+
+  .itu-tree { display: flex; align-items: stretch; gap: 0; overflow-x: auto; padding: 0.25rem 0 0.75rem; margin-bottom: 0.5rem; }
+  .itu-gen { display: flex; flex-direction: column; justify-content: center; gap: 0.35rem; min-width: 128px; position: relative; padding: 0 0.9rem; }
+  .itu-gen + .itu-gen::before { content: "\f054"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: -0.35rem; top: 50%; transform: translateY(-50%); color: var(--global-text-color-light); font-size: 0.75rem; }
+  .itu-gen h6 { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--global-text-color-light); margin: 0 0 0.2rem; text-align: center; }
+  .itu-node { display: block; font-size: 0.8rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px solid var(--global-divider-color); text-align: center; white-space: nowrap; color: var(--global-text-color) !important; background: var(--global-card-bg-color); }
+  a.itu-node:hover { border-color: var(--global-theme-color); text-decoration: none; }
+  .itu-node.itu-me { background: var(--global-theme-color); border-color: var(--global-theme-color); color: #fff !important; font-weight: 600; font-size: 0.95rem; padding: 0.45rem 0.8rem; }
+  .itu-node.itu-root { border-style: dashed; color: var(--global-text-color-light) !important; }
+
+  .itu-group { margin-top: 1.6rem; }
+  .itu-group h3 { font-size: 1.1rem; margin-bottom: 0.15rem; }
+  .itu-group h3 i { color: var(--global-theme-color); margin-right: 0.35rem; }
+  .itu-group h3 small { color: var(--global-text-color-light); font-size: 0.8rem; margin-left: 0.3rem; }
+  .itu-group > p { font-size: 0.85rem; color: var(--global-text-color-light); margin-bottom: 0.6rem; }
+  .itu-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.6rem; }
+  .itu-card { display: flex; flex-direction: column; border: 1px solid var(--global-divider-color); border-radius: 0.6rem; padding: 0.6rem 0.75rem; background: var(--global-card-bg-color); color: var(--global-text-color) !important; transition: transform 0.15s, border-color 0.15s; }
+  .itu-card:hover { transform: translateY(-2px); border-color: var(--global-theme-color); text-decoration: none; }
+  .itu-card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; }
+  .itu-card-top strong { font-size: 0.95rem; }
+  .itu-card-top .itu-star { font-size: 0.78rem; color: var(--global-text-color-light); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .itu-card-top .itu-star i { color: #e3b341; }
+  .itu-owner { font-size: 0.72rem; color: var(--global-text-color-light); }
+  .itu-note { font-size: 0.8rem; margin-top: 0.3rem; line-height: 1.35; }
+  .itu-bar { height: 3px; border-radius: 2px; background: var(--global-divider-color); margin-top: auto; padding-top: 0; }
+  .itu-bar > i { display: block; height: 100%; border-radius: 2px; background: var(--global-theme-color); opacity: 0.8; }
+  .itu-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .itu-chips a { font-size: 0.75rem; padding: 0.15rem 0.55rem; border-radius: 999px; border: 1px solid var(--global-divider-color); color: var(--global-text-color-light) !important; }
+  .itu-chips a:hover { border-color: var(--global-theme-color); text-decoration: none; }
+  .itu-foot { font-size: 0.75rem; color: var(--global-text-color-light); margin-top: 1rem; }
+</style>
+
+<div class="itu-stats">
+  <div class="itu-stat"><b>{{ n_repos }}</b><span>public repos build on, port or cite it</span></div>
+  <div class="itu-stat"><b>{{ total_stars | divided_by: 1000.0 | round: 1 }}k</b><span>combined stars of those repos</span></div>
+  <div class="itu-stat"><b><span data-github-stars="Huy-Quang-Dao/instantTrack"><span class="stars-count">218</span></span></b><span>stars on InstantTrack</span></div>
+  <div class="itu-stat"><b>{{ d.forks }}</b><span>direct forks</span></div>
+  <div class="itu-stat"><b>4</b><span>generations of follow-up work</span></div>
+</div>
+
+<div class="itu-tree" aria-label="Lineage of projects around InstantTrack">
+  <div class="itu-gen">
+    <h6>Roots</h6>
+    <span class="itu-node itu-root">SuperMimic</span>
+    <a class="itu-node itu-root" href="https://github.com/zita-ch/supermimic_vibed">supermimic_vibed</a>
+    <span class="itu-node itu-root">InstantMimic</span>
+  </div>
+  <div class="itu-gen">
+    <h6>Gen 0</h6>
+    <span class="itu-node itu-me">InstantTrack</span>
+  </div>
+  <div class="itu-gen">
+    <h6>Gen 1</h6>
+    <a class="itu-node" href="https://github.com/fuyichen0725/blinkmimic">BlinkMimic</a>
+    <a class="itu-node" href="https://github.com/kaibohex/muscle-supermimic">muscle-supermimic</a>
+    <a class="itu-node" href="https://github.com/Motphys/Uni-SuperMimic">Uni-SuperMimic</a>
+    <a class="itu-node" href="https://github.com/IoET-y/robot-skill-factory">robot-skill-factory</a>
+    <a class="itu-node" href="https://github.com/RoboticsResearchHubVN/InstantAMP">InstantAMP</a>
+  </div>
+  <div class="itu-gen">
+    <h6>Gen 2</h6>
+    <a class="itu-node" href="https://github.com/nico-bohlinger/xmimic">XMimic</a>
+    <a class="itu-node" href="https://github.com/Roboparty/PartyMimic">PartyMimic</a>
+    <a class="itu-node" href="https://github.com/wbc-mjlab/wbc-mjlab">wbc-mjlab</a>
+    <a class="itu-node" href="https://github.com/Frank-ZY-Dou/ndm-gym">NDM Gym</a>
+    <a class="itu-node" href="https://github.com/jyl681/blinkmimic2">BlinkMimic 2</a>
+    <a class="itu-node" href="https://github.com/VittorioPastore/m1mic-mlx">M1mic-MLX</a>
+    <a class="itu-node" href="https://github.com/ROBOTIS-GIT/cyclo_mjlab">cyclo_mjlab</a>
+  </div>
+  <div class="itu-gen">
+    <h6>Gen 3</h6>
+    <a class="itu-node" href="https://github.com/nico-bohlinger/xsoma">XSoma</a>
+    <a class="itu-node" href="https://github.com/fei-yang-wu/RLOpt">RLOpt</a>
+    <a class="itu-node" href="https://github.com/MyoHub/myosuite">MyoSuite</a>
+  </div>
+</div>
+
+{% assign max_stars = 0 %}
+{% for g in d.groups %}{% for r in g.repos %}{% if r.stars > max_stars %}{% assign max_stars = r.stars %}{% endif %}{% endfor %}{% endfor %}
+
+{% for g in d.groups %}
+<div class="itu-group" id="itu-{{ g.id }}">
+  <h3><i class="fa-solid {{ g.icon }}"></i>{{ g.title }}<small>{{ g.repos.size }} repos</small></h3>
+  <p>{{ g.blurb }}</p>
+  <div class="itu-cards">
+    {% assign sorted = g.repos | sort: "stars" | reverse %}
+    {% for r in sorted %}
+    {% assign owner = r.repo | split: "/" | first %}
+    {% comment %} log-ish bar: sqrt keeps small repos visible next to 4.5k-star ones {% endcomment %}
+    {% assign w = r.stars | plus: 1 | times: 1.0 | divided_by: max_stars | times: 10000 | round %}
+    <a class="itu-card" href="https://github.com/{{ r.repo }}">
+      <div class="itu-card-top">
+        <strong>{{ r.name }}</strong>
+        <span class="itu-star"><i class="fa-solid fa-star"></i> {{ r.stars }}</span>
+      </div>
+      <span class="itu-owner"><i class="fa-brands fa-github"></i> {{ owner }}</span>
+      <span class="itu-note">{{ r.note }}</span>
+      <div class="itu-bar" style="margin-top:0.5rem"><i data-w="{{ w }}"></i></div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+
+<div class="itu-group">
+  <h3><i class="fa-solid fa-ellipsis"></i>And more<small>{{ d.more.size }} repos</small></h3>
+  <p>Forks of forks, lab notes and blog posts that also credit InstantTrack.</p>
+  <div class="itu-chips">
+    {% for r in d.more %}<a href="https://github.com/{{ r }}">{{ r }}</a>{% endfor %}
+  </div>
+</div>
+
+<p class="itu-foot">
+  Found with GitHub code search and checked by hand. Star counts as of {{ d.as_of | date: "%-d %b %Y" }}.
+  Built something on InstantTrack and not listed? <a href="https://github.com/Huy-Quang-Dao/instantTrack/issues">Open an issue</a>.
+</p>
+
+<script>
+  // Bar length on a square-root scale of stars, so a 5-star repo still shows next to a 4,500-star one.
+  document.querySelectorAll(".itu-bar > i[data-w]").forEach(function (el) {
+    el.style.width = Math.max(4, Math.sqrt(+el.dataset.w / 10000) * 100).toFixed(1) + "%";
+  });
+</script>

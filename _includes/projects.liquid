@@ -28,6 +28,14 @@
                   <span class="stars-count"></span>
                 </span>
               {% endif %}
+              {% if project.used_by %}
+                {% assign ud = site.data.instanttrack_users %}
+                {% assign un = ud.more.size %}
+                {% for g in ud.groups %}{% assign un = un | plus: g.repos.size %}{% endfor %}
+                <span class="stars" data-toggle="tooltip" title="Public repos that build on or cite it">
+                  &nbsp;<i class="fa-solid fa-code-branch"></i> used by {{ un }} repos
+                </span>
+              {% endif %}
             </div>
           {% endif %}
         </div>
