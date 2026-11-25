@@ -681,6 +681,40 @@ footer.sticky-bottom {
     }
   }
 
+  .project-card {
+    position: relative;
+
+    .card-title a {
+      color: inherit;
+    }
+
+    &:hover .card-title {
+      color: var(--global-theme-color);
+    }
+
+    // Cover the whole card with the title link.
+    .card-link-stretched::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    // Links inside the card sit above the stretched title link.
+    .card-link-above {
+      position: relative;
+      z-index: 2;
+    }
+
+    .used-by {
+      color: var(--global-text-color-light);
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
   .col {
     padding-bottom: 1rem;
   }

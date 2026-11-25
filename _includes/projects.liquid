@@ -1,45 +1,46 @@
+{% capture card_href %}{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}{% endcapture %}
 <div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.video %}
-        <video class="card-img-top" src="{{ project.video | relative_url }}" autoplay muted loop playsinline></video>
-      {% elsif project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars" data-github-stars="{{ project.github_stars }}" hidden>
-                  <i class="fa-solid fa-star"></i>
-                  <span class="stars-count"></span>
-                </span>
-              {% endif %}
-              {% if project.used_by %}
-                {% assign ud = site.data.instanttrack_users %}
-                {% assign un = ud.more.size %}
-                {% for g in ud.groups %}{% assign un = un | plus: g.repos.size %}{% endfor %}
-                <span class="stars" data-toggle="tooltip" title="Public repos that build on or cite it">
-                  &nbsp;<i class="fa-solid fa-code-branch"></i> used by {{ un }} repos
-                </span>
-              {% endif %}
+  <!-- The title link stretches over the whole card, so the card stays clickable
+       without wrapping the GitHub link in another <a> (nested links break the card). -->
+  <div class="card h-100 hoverable project-card">
+    {% if project.video %}
+      <video class="card-img-top" src="{{ project.video | relative_url }}" autoplay muted loop playsinline></video>
+    {% elsif project.img %}
+      {%
+        include figure.liquid
+        loading="eager"
+        path=project.img
+        sizes = "250px"
+        alt="project thumbnail"
+        class="card-img-top"
+      %}
+    {% endif %}
+    <div class="card-body">
+      <h2 class="card-title"><a class="card-link-stretched" href="{{ card_href }}">{{ project.title }}</a></h2>
+      <p class="card-text">{{ project.description }}</p>
+      <div class="row ml-1 mr-1 p-0">
+        {% if project.github %}
+          <div class="github-icon">
+            <div class="icon card-link-above" data-toggle="tooltip" title="Code Repository">
+              <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
             </div>
-          {% endif %}
-        </div>
+            {% if project.github_stars %}
+              <span class="stars" data-toggle="tooltip" title="GitHub Stars" data-github-stars="{{ project.github_stars }}" hidden>
+                <i class="fa-solid fa-star"></i>
+                <span class="stars-count"></span>
+              </span>
+            {% endif %}
+            {% if project.used_by %}
+              {% assign ud = site.data.instanttrack_users %}
+              {% assign un = ud.more.size %}
+              {% for g in ud.groups %}{% assign un = un | plus: g.repos.size %}{% endfor %}
+              <a class="stars card-link-above used-by" href="{{ card_href }}#built-on-instanttrack" data-toggle="tooltip" title="Papers and public repos that build on or cite it">
+                <i class="fa-solid fa-code-branch"></i> used by {{ un }} repos · {{ ud.papers.size }} papers
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
     </div>
-  </a>
+  </div>
 </div>
