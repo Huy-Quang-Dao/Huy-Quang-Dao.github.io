@@ -706,6 +706,10 @@ footer.sticky-bottom {
       z-index: 2;
     }
 
+    .stars {
+      white-space: nowrap;
+    }
+
     .used-by {
       color: var(--global-text-color-light);
 

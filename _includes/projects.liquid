@@ -35,7 +35,7 @@
               {% assign un = ud.more.size %}
               {% for g in ud.groups %}{% assign un = un | plus: g.repos.size %}{% endfor %}
               <a class="stars card-link-above used-by" href="{{ card_href }}#built-on-instanttrack" data-toggle="tooltip" title="Papers and public repos that build on or cite it">
-                <i class="fa-solid fa-code-branch"></i> used by {{ un }} repos · {{ ud.papers.size }} papers
+                <i class="fa-solid fa-code-branch"></i> {{ un }} repos · {{ ud.papers.size }} papers
               </a>
             {% endif %}
           </div>
