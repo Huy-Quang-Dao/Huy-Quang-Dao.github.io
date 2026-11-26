@@ -1,19 +1,16 @@
-{% comment %}
+{%- comment -%}
   Blog posts about a project: every post tagged with the project's `blog_tag`.
-  Used at the end of a project page; the project card links to the newest one.
-{% endcomment %}
-{% if page.blog_tag %}
-  {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains page.blog_tag" %}
-  {% if tag_posts.size > 0 %}
-    <h2 id="from-the-blog">From the blog</h2>
-    <ul class="project-posts">
-      {% for post in tag_posts %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="project-posts-date">{{ post.date | date: "%-d %b %Y" }}</span>
-          {% if post.description %}<br><span class="project-posts-desc">{{ post.description }}</span>{% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endif %}
+  Included from Markdown, so the HTML must not be indented: kramdown turns lines
+  indented by 4+ spaces into a code block.
+{%- endcomment -%}
+{%- if page.blog_tag -%}
+{%- assign tag_posts = site.posts | where_exp: "post", "post.tags contains page.blog_tag" -%}
+{%- if tag_posts.size > 0 -%}
+<h2 id="from-the-blog">From the blog</h2>
+<ul class="project-posts">
+{%- for post in tag_posts %}
+<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="project-posts-date">{{ post.date | date: "%-d %b %Y" }}</span>{% if post.description %}<br><span class="project-posts-desc">{{ post.description }}</span>{% endif %}</li>
+{%- endfor %}
+</ul>
+{%- endif -%}
+{%- endif -%}
