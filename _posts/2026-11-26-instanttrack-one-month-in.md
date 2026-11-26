@@ -20,12 +20,12 @@ Every release is measured the same way: train until the deployed policy reaches 
 
 | Release | Date | Time to target | vs SuperMimic + EMA | What changed |
 | :-- | :-- | --: | --: | :-- |
-| v1.0 | 29 Oct | 15 min | 2.2× | SuperMimic-style world model with an InstantMimic-style GPU training loop |
-| v1.1 | 30 Oct | 11.4 min | 2.8× | The policy outputs a correction to the reference pose |
-| v1.2 | 1 Nov | 7.2 min | 4.7× | Muon for the hidden weight matrices, CUDA-graph captured updates, one goal-encoder pass per rollout |
-| v1.3 | 4 Nov | ≤ 3 min | ≥ 10.9× | BlinkMimic's changes merged back: structured world model, mirror augmentation, evaluation-guided resets, overlapped CUDA streams |
-| v1.4 | 7 Nov | 2.74 min | | Overlapped critic update, 11.87 it/s (from 10.28) |
-| v1.4.1 | 23 Nov | | | `CITATION.cff` and a Zenodo DOI |
+| v1.0 | 29&nbsp;Oct | 15&nbsp;min | 2.2× | SuperMimic-style world model with an InstantMimic-style GPU training loop |
+| v1.1 | 30&nbsp;Oct | 11.4&nbsp;min | 2.8× | The policy outputs a correction to the reference pose |
+| v1.2 | 1&nbsp;Nov | 7.2&nbsp;min | 4.7× | Muon for the hidden weight matrices, CUDA-graph captured updates, one goal-encoder pass per rollout |
+| v1.3 | 4&nbsp;Nov | ≤&nbsp;3&nbsp;min | ≥ 10.9× | BlinkMimic's changes merged back: structured world model, mirror augmentation, evaluation-guided resets, overlapped CUDA streams |
+| v1.4 | 7&nbsp;Nov | 2.74&nbsp;min | | Overlapped critic update, 11.87 it/s (from 10.28) |
+| v1.4.1 | 23&nbsp;Nov | | | `CITATION.cff` and a Zenodo DOI |
 
 From v1.3 on, checkpoints are evaluated every 100 iterations instead of every 1.5 to 3 minutes, so the times are finer than the old schedule could show. The v1.4 figure is the mean of 15 seeds (range 2.21–3.61 min). The [changelog](https://github.com/Huy-Quang-Dao/instantTrack/blob/main/CHANGELOG.md) has every run, including the changes that did not help.
 
