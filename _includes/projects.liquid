@@ -34,7 +34,12 @@
               {% assign ud = site.data.instanttrack_users %}
               {% assign un = ud.more.size %}
               {% for g in ud.groups %}{% assign un = un | plus: g.repos.size %}{% endfor %}
-              <a class="stars card-link-above used-by" href="{{ card_href }}#built-on-instanttrack" data-toggle="tooltip" title="Papers and public repos that build on or cite it">
+              {% assign used_by_href = card_href | append: "#from-the-blog" %}
+              {% if project.blog_tag %}
+                {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains project.blog_tag" %}
+                {% if tag_posts.size > 0 %}{% assign used_by_href = tag_posts.first.url | relative_url | append: "#who-builds-on-instanttrack" %}{% endif %}
+              {% endif %}
+              <a class="stars card-link-above used-by" href="{{ used_by_href }}" data-toggle="tooltip" title="Papers and public repos that build on or cite it">
                 <i class="fa-solid fa-code-branch"></i> {{ un }} repos · {{ ud.papers.size }} papers
               </a>
             {% endif %}
